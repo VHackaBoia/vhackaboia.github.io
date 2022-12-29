@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  web:
+    image: jekyll/jekyll
+    command: jekyll serve --watch --force_polling --host 0.0.0.0 --verbose
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/srv/jekyll
+    # - /srv/jekyll/vendor/bundle
+    environment:
+      - JEKYLL_ENV=development
+    working_dir: /srv/jekyll
+    tty: true

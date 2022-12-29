@@ -1,0 +1,62 @@
+title: 'V:HackaBoia'
+description: 'V:HackaBoia WebSite'
+
+url: 'https://vhackaboia.github.io'
+github_username: 'vhackaboia'
+baseurl: ''
+
+# Build settings
+markdown: kramdown
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-avatar
+  - jekyll-mentions
+  - jekyll-gist
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+# Sitemap
+sitemap:
+  exclude:
+    - /404.html
+    - /feed.xml
+    - /sitemap.xml
+
+# Feed
+feed:
+  path: /feed.xml
+  limit: 20
+
+# Avatar
+avatar:
+  size: 200
+  default: identicon
+
+# Mentions
+mentions:
+  base_url: https://github.com
+  username_url: /{username}
+  mention_url: /{username}
+  mention_class: mention
+
+# Gist
+gist:
+  noscript: true
+
+# Pagination
+paginate: 5
+paginate_path: "/page:num/"
+
+# Collections
+collections:
+  hackers:
+    output: true
+  writeups:
+    output: true
