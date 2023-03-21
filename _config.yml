@@ -15,7 +15,6 @@ plugins:
   - jekyll-avatar
   - jekyll-mentions
   - jekyll-gist
-  - jekyll-jupyter-notebook
 
 # Exclude from processing.
 exclude:
@@ -63,9 +62,12 @@ collections:
   hackers:
     output: true
     fa-logo: user
+  ctfs:
+    output: true
+    fa-logo: flag
   writeups:
     output: true
-    fa-logo: file-lines
+    fa-logo: file
   posts:
     output: true
     fa-logo: th-list
