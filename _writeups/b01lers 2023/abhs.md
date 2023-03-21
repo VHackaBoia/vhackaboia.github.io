@@ -1,4 +1,5 @@
 ---
+layout: default
 ctf: "b01lers 2023"
 title: "abhs"
 description: "Just a warmup."
@@ -6,7 +7,8 @@ date: 2023-03-18
 category: "Misc"
 points: 79
 solves: 92
-author: ["Quby"]
+tags: ["shell"]
+author: ["quby"]
 ---
 # abhs (79 pts, 92 solved) 
 
@@ -74,10 +76,9 @@ Wut? I didn't ever used emor command, wait a minute...
 
 Command is ordered alphabetically, ```emor``` instead of ```more```.
 
-We need to find a command for read file ordered alphabetically, in order to get allowable command list:
-
 ### Exploiting Phase
 
+We need to find a command for read file ordered alphabetically, in order to get allowable command list:
 
 ```bash
 !bash -c "compgen -c | grep -ix 'a*b*c*d*e*f*g*h*i*j*k*l*m*n*o*p*q*r*s*t*u*v*w*x*y*z*'"
