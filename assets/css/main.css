@@ -1,0 +1,13 @@
+body {
+    font-family: monospace;
+    background:#151E28;
+    color:#FFFFFF;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.navbar-toggler-icon{
+    background-image: url(../images/cows.svg);
+}
