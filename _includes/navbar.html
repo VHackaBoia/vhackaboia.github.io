@@ -1,17 +1,20 @@
-<nav class="navbar navbar-expand-sm">
-    <div class="container">
-        <a class="navbar-brand text-white" href="#"><i class="fa fa-duotone fa-cow"></i> {{ site.description }}</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="nvbCollapse">
-            <ul class="navbar-nav ml-auto">
-                {% for item in site.collections %}
-                    <li class="nav-item pl-1">
-                        <a class="nav-link" href="/{{item.label}}/"><i class="mr-1 fa-solid fa-{{item.fa-logo}}"></i>{{item.label}}</a>
-                    </li>
-                {% endfor %}
-            </ul>
-        </div>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#"><i class="fa fa-duotone fa-cow"></i> {{ site.title }}</a>
+  
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        {% for item in site.collections %}
+            <li class="nav-item pl-1">
+                <a class="nav-link" href="/{{item.label}}/"><i class="mr-1 fa-solid fa-{{item.fa-logo}}"></i>{{item.label}}</a>
+            </li>
+        {% endfor %}
+      </ul>
     </div>
-</nav>
+  </nav> 
