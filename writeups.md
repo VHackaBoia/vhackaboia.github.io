@@ -7,7 +7,14 @@ layout: default
     <div class="table-responsive">
         <table class="">
             <thead>
-
+                <tr>
+                    <th>Category</th>
+                    <th>CTF</th>
+                    <th>Title</th>
+                    <th>Points</th>
+                    <th>Solves</th>
+                    <th>Author</th>
+                </tr>
             </thead>
             <tbody>
             {% for writeup in sorted_writeups %}
