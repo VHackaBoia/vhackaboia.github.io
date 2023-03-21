@@ -7,3 +7,32 @@ body {
 .text-center {
     text-align: center;
 }
+
+table {
+    color: #fff;
+    background-color: #212529;
+  }
+
+table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+table {
+    border-collapse: collapse;
+}
+
+thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    border-bottom-color: rgb(222, 226, 230);
+}
+td, th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    border-top-color: rgb(222, 226, 230);
+}
+th {
+    text-align: inherit;
+}
