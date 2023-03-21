@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="row">
+    <img src="/ctfs/logos/{{page.image}}" class="mw-100 mh-25" alt="">
+</div>
+
+<h1>{{ page.name }}</h1>
+
+<div class="row">
+    {{ page.description }}
+</div>
+<div class="row">
+{% assign sorted_writeups = site.writeups | sort: 'category' %}
+    <div class="table-responsive">
+        <table class="">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Name</th>
+                    <th>Points</th>
+                    <th>Solves</th>
+                    <th>Author</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for writeup in sorted_writeups %}
+                {% if writeup.ctf == page.name %}
+                <tr>
+                    <td>{{ writeup.category }}</td>
+                    <td><a href="{{ writeup.url }}">{{ writeup.title }}</a></td>
+                    <td>{{ writeup.points }}</td>
+                    <td>{{ writeup.solves }}</td>
+                    <td>{{ writeup.author | join ", "}}</td>
+                </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
