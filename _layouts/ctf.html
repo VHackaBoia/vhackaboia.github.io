@@ -2,15 +2,23 @@
 layout: default
 ---
 
-<div class="row">
+<div class="row mb-5">
     <img src="/ctfs/logos/{{page.image}}" class="mw-100 mh-25" alt="">
 </div>
 
 <h1>{{ page.name }}</h1>
+{%   assign start_date =  page.start_date | date: '%s'      %}
+{%   assign end_date =  page.end_date | date: '%s'  %}
+{%   assign secondsSince = end_date | minus: start_date     %}
+{%   assign hoursSince = secondsSince | divided_by: 60 | divided_by: 60     %}
+<p>Start: {{ page.start_date | date: "%B %d, %Y - %H:%M:%S" }} (UTC +1)</p>
+<p>End: {{ page.end_date | date: "%B %d, %Y - %H:%M:%S" }} (UTC +1)</p>
+<p>Duration: {{ hoursSince | rounds }} hours</p>
 
-<div class="row">
+<div class="row my-5">
     {{ page.description }}
 </div>
+
 <div class="row">
 {% assign sorted_writeups = site.writeups | sort: 'category' %}
     <div class="table-responsive">

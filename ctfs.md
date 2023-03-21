@@ -12,6 +12,8 @@ layout: default
                     <th>Name</th>
                     <th>Rank</th>
                     <th>Weight</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
                 </tr>
             </thead>
             <tbody>
@@ -21,6 +23,8 @@ layout: default
                     <td><a href="{{ ctf.url }}">{{ ctf.name }}</a></td>
                     <td>{{ ctf.rank }} / {{ctf.teams}}</td>
                     <td>{{ ctf.weight }}</td>
+                    <td>{{ ctf.start_date }}</td>
+                    <td>{{ ctf.end_date }}</td>
                 </tr>
             {% endfor %}
             </tbody>
