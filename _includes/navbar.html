@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-sm">
     <div class="container">
         <a class="navbar-brand text-white" href="#"><i class="fa fa-duotone fa-cow"></i> {{ site.description }}</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
@@ -8,7 +8,7 @@
             <ul class="navbar-nav ml-auto">
                 {% for item in site.collections %}
                     <li class="nav-item pl-1">
-                        <a class="nav-link" href="{{item.label}}"><i class="mr-1 fa-solid fa-{{item.fa-logo}}"></i>{{item.label}}</a>
+                        <a class="nav-link" href="/{{item.label}}/"><i class="mr-1 fa-solid fa-{{item.fa-logo}}"></i>{{item.label}}</a>
                     </li>
                 {% endfor %}
             </ul>
