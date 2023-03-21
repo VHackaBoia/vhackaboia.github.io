@@ -10,10 +10,11 @@ layout: default
                 <tr>
                     <th>Category</th>
                     <th>CTF</th>
-                    <th>Title</th>
+                    <th>Tasks</th>
                     <th>Points</th>
                     <th>Solves</th>
-                    <th>Author</th>
+                    <th>Authors</th>
+                    <th>Tags</th>
                 </tr>
             </thead>
             <tbody>
@@ -25,7 +26,8 @@ layout: default
                     <td><a href="{{ writeup.url }}">{{ writeup.title }}</a></td>
                     <td>{{ writeup.points }}</td>
                     <td>{{ writeup.solves }}</td>
-                    <td>{{ writeup.author }}</td>
+                    <td>{{ writeup.author | join: ", "}}</td>
+                    <td>{{ writeup.tags | join: ", "}}</td>
                 </tr>
             {% endfor %}
             </tbody>
