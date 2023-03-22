@@ -1,7 +1,7 @@
 ---
 layout: default
 ctf: "b01lers 2023"
-title: "cheating scandal"
+name: "cheating scandal"
 description: "Cheating OSINT"
 date: 2023-03-18
 category: "Osint"

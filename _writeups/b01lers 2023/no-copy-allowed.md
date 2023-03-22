@@ -1,7 +1,7 @@
 ---
 layout: default
 ctf: "b01lers 2023"
-title: "no-copy-allowed"
+name: "no-copy-allowed"
 description: "keep doing this until you get bored."
 date: 2023-03-18
 category: "Misc"

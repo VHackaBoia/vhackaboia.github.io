@@ -23,7 +23,7 @@ layout: default
                     
                     <td>{{ writeup.category }}</td>
                     <td><a href="/ctfs/{{writeup.ctf}}">{{ writeup.ctf }}</a></td>
-                    <td><a href="{{ writeup.url }}">{{ writeup.title }}</a></td>
+                    <td><a href="{{ writeup.url }}">{{ writeup.name }}</a></td>
                     <td>{{ writeup.points }}</td>
                     <td>{{ writeup.solves }}</td>
                     <td>{{ writeup.author | join: ", "}}</td>

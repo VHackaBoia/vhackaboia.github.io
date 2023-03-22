@@ -1,7 +1,7 @@
 ---
 layout: default
 ctf: "b01lers 2023"
-title: "warmup"
+name: "warmup"
 description: "Just a My first flask app, I hope you like it"
 date: 2023-03-18
 category: "Web"

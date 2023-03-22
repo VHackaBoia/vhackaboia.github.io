@@ -1,7 +1,7 @@
 ---
 layout: default
 ctf: "b01lers 2023"
-title: "abhs"
+name: "abhs"
 description: "Just a warmup."
 date: 2023-03-18
 category: "Misc"
