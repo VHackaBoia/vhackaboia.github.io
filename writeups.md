@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="row">
-{% assign sorted_writeups = site.writeups | sort: 'date' %}
+{% assign sorted_writeups = site.writeups | sort: 'date' | reverse %}
     <div class="table-responsive">
         <table class="">
             <thead>

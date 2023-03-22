@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="row">
-{% assign sorted_ctfs = site.ctfs | sort: 'date' %}
+{% assign sorted_ctfs = site.ctfs | sort: 'start_date' | reverse %}
     <div class="table-responsive">
         <table class="">
             <thead>
