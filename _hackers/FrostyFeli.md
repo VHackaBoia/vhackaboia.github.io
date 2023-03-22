@@ -4,7 +4,7 @@ name: FrostyFeli
 real_name: "Felice Capone"
 role: 'Junior Lieutenant'
 skills: ['misc', 'network', 'web', 'pwn', 'osint']
-avatar: "FrostyFeli.png"
+avatar: "frostyfeli.png"
 github: "https://github.com/FrostyFeli"
 twitter: ""
 ---
