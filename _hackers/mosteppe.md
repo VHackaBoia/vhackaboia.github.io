@@ -3,7 +3,7 @@ layout: hacker
 name: mosteppe
 real_name: ""
 role: 'Meme Master'
-skills: ['osint', 'web', 'rev']
+skills: ['osint', 'web', 'reversing']
 avatar: "mosteppe.jpg"
 github: ""
 twitter: ""
