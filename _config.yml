@@ -62,6 +62,8 @@ paginate_path: "/page:num/"
 
 # Collections
 collections:
+  skills:
+    output: false
   events:
     output: true
     fa-logo: calendar
