@@ -3,10 +3,10 @@ layout: default
 ---
 
 <div class="row">
-    <div class="col-4"></div>
-    <div class="col-4 text-center">
+    <div class="col-lg-4 col-sm-2"></div>
+    <div class="col-lg-4 col-sm-6 text-center">
         <img class="rounded-circle mw-100 mh-25" src="/hackers/avatars/{% if page.avatar %}{{ page.avatar }}{% else %}default.png{% endif %}" alt="avatar" />
-        <h1 class="my-2">{{ page.name }}</h1>
+        <h1 class="my-2">{{page.name}}</h1>
         {% for skill in page.skills %}
         {% case skill %}
             {% when "pwn" %}
@@ -36,10 +36,12 @@ layout: default
         {% endcase %}
         {% endfor %}
     </div>
-    <div class="col-4"></div>
+    <div class="col-lg-4 col-sm-2"></div>
 </div>
 
-{{ content }}
+<div class="row my-5">
+    {{ content }}
+</div>
 
 <h1 class="text-center">Writeups</h1>
 <div class="row">
