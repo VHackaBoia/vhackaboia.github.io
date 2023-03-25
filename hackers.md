@@ -8,9 +8,7 @@
                 </a>
             </div>
             <div class="my-2 text-center">
-                <a href="/hackers/{{ user.name }}" title="{{ user.name }}">
-                    {{ user.name }}
-                </a>
+                <a href="/hackers/{{ user.name }}" title="{{ user.name }}">{{user.name}}</a>
                 <br>
                 {% for skill in user.skills %}
                     {% case skill %}
