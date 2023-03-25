@@ -7,6 +7,7 @@
                     <img class="rounded-circle" src="/hackers/avatars/{% if user.avatar %}{{ user.avatar }}{% else %}default.png{% endif %}" alt="avatar" />
                 </a>
             </div>
+
             <div class="row">
                 <div class="col-12 my-2 text-center">
                     <a href="/hackers/{{ user.name }}" title="{{ user.name }}">{{user.name}}</a>
