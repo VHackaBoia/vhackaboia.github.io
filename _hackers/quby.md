@@ -3,7 +3,7 @@ layout: hacker
 name: quby
 real_name: ""
 role: 'Captain'
-skills: ['pwn', 'crypto', 'web']
+skills: ['pwn', 'cryptography', 'websecurity']
 avatar: "quby.jpeg"
 github: ""
 twitter: ""
