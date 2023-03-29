@@ -8,7 +8,7 @@ category: "Osint"
 points: 370
 solves: 18
 tags: ["docker", "docker-hub", "discord", "discord-bot", "privilage escalation"]
-author: ["paololo", "r0x10", "quby"]
+author: ["pa0l0", "r0x10", "quby"]
 ---
 
 # cheating scandal (370 pts, 18 solved)
