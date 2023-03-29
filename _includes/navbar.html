@@ -11,9 +11,11 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         {% for item in site.collections %}
+        {% if item.output == true %}
             <li class="nav-item pl-1">
                 <a class="nav-link" href="/{{item.label}}"><i class="mr-1 fa-solid fa-{{item.fa-logo}}"></i>{{item.label}}</a>
             </li>
+        {% endif %}
         {% endfor %}
       </ul>
     </div>

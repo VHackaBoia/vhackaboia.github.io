@@ -3,7 +3,7 @@ layout: hacker
 name: FrostyFeli
 real_name: "Felice Capone"
 role: 'Junior Lieutenant'
-skills: ['misc', 'network', 'web', 'pwn', 'osint']
+skills: ['misc', 'networks', 'websecurity', 'pwn', 'osint']
 avatar: "frostyfeli.png"
 github: "https://github.com/FrostyFeli"
 twitter: ""

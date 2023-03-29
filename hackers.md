@@ -7,35 +7,22 @@
                     <img class="rounded-circle" src="/hackers/avatars/{% if user.avatar %}{{ user.avatar }}{% else %}default.png{% endif %}" alt="avatar" />
                 </a>
             </div>
-            <div class="my-2 text-center">
-                <a href="/hackers/{{ user.name }}" title="{{ user.name }}">{{user.name}}</a>
-                <br>
+
+            <div class="row">
+                <div class="col-12 my-2 text-center">
+                    <a href="/hackers/{{ user.name }}" title="{{ user.name }}">{{user.name}}</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
                 {% for skill in user.skills %}
-                    {% case skill %}
-                        {% when "pwn" %}
-                            <i class="mr-1 fa-solid fa-bug" title="pwn"></i>
-                        {% when "web" %}
-                            <i class="mr-1 fa-solid fa-globe" title="web"></i>
-                        {% when "crypto" %}
-                            <i class="mr-1 fa-solid fa-key" title="crypto"></i>
-                        {% when "forensics" %}
-                            <i class="mr-1 fa-solid fa-searchengin" title="forensics"></i>
-                        {% when "reversing" %}
-                            <i class="mr-1 fa-solid fa-code" title="reversing"></i>
-                        {% when "misc" %}
-                            <i class="mr-1 fa-solid fa-hot-wizard" title="misc"></i>
-                        {% when "android" %}
-                            <i class="mr-1 fa-solid fa-android" title="android"></i>
-                        {% when "osint" %}
-                            <i class="mr-1 fa-solid fa-user-secret" title="osint"></i>
-                        {% when "stego" %}
-                            <i class="mr-1 fa-solid fa-icons" title="stego"></i>
-                        {% when "network" %}
-                            <i class="mr-1 fa-solid fa-network-wired" title="network"></i>
-                        {% when "hardware" %}
-                            <i class="mr-1 fa-solid fa-microchip" title="hardware"></i>
-                    {% endcase %}
+                    {% for item in site.skills %}
+                        {% if item.name == skill %}
+                            <i class="mr-1 {{item.font-awesome}}" title="{{item.tag}}"></i>
+                        {% endif %}
+                    {% endfor %}
                 {% endfor %}
+                </div>
             </div>
        </div>
   {% endfor %}
