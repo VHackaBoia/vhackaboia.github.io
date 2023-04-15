@@ -8,8 +8,8 @@ start_date: "2023-04-14 16:00:00"
 end_date: "2023-04-15 16:00:00"
 url: https://hackpack.club/ctf2023/
 ctftime: https://ctftime.org/event/1893
-rank: 
-teams: 
-max_score: 
+rank: 59
+teams: 381
+max_score: 500
 weight: 43.50
 ---
